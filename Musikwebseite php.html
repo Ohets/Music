@@ -135,7 +135,7 @@
             if (fileInput.files.length > 0) {
                 formData.append('file', fileInput.files[0]);
 
-                fetch('upload php.html', {
+                fetch('upload. php'), {
                     method: 'POST',
                     body: formData
                 })
@@ -153,7 +153,7 @@
         });
 
         function loadUploadedFiles() {
-            fetch('list files php.html')
+            fetch('list_files.php')
                 .then(response => response.json())
                 .then(data => {
                     var filesList = document.getElementById('uploadedFilesList');
